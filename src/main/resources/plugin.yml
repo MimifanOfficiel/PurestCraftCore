@@ -1,0 +1,80 @@
+name: PurestCraftCore
+version: '${project.version}'
+main: fr.mimifan.purestcraftcore.PurestCraftCore
+api-version: '1.20'
+load: POSTWORLD
+depend: [WorldGuard]
+commands:
+  msg:
+    description: "Envoie un message privé à un joueur"
+    aliases:
+      - tell
+      - whisper
+      - m
+      - message
+      - dm
+      - mp
+  respond:
+    description: "Répond au message d'un joueur"
+    aliases:
+      - r
+      - resp
+      - answer
+      - ans
+  staffchat:
+    description: "Le staffchat de PurestCraft"
+    permission: "purestcraft.staffchat"
+    aliases:
+      - sc
+      - staffc
+      - chatstaff
+      - cstaff
+      - schat
+  spawn:
+    description: "Teleporte au spawn du server"
+  setspawn:
+    description: "Modifie l'emplacement du spawn du server"
+    permission: "purestcraft.setspawn"
+  kick:
+    description: "Expulse un joueur du server"
+    permission: "purestcraft.kick"
+  mute:
+    description: "Rend un joueur muet jusqu'à nouvel ordre"
+    permission: "purestcraft.mute"
+  tempmute:
+    description: "Rend temporairement un joueur muet"
+    permission: "purestcraft.tempmute"
+  unmute:
+    description: "Autorise un joueur à parler à nouveau"
+    permission: "purestcraft.unmute"
+  sethome:
+    description: "Place une résidences à l'emplacement du joueur"
+  delhome:
+    description: "Supprime une résidences"
+  home:
+    description: "Téléporte à une résidences"
+  homes:
+    description: "Affiche la liste des résidences"
+  pwarp:
+    description: "Menu des player warps"
+  #login:
+  #  description: "Commande pour se connecter"
+  #  aliases:
+  #    - l
+  #    - log
+  #    - connexion
+  #register:
+  #  description: "Commande pour s'enregistrer"
+  #  aliases:
+  #    - reg
+
+permissions:
+  purestcraft.all:
+    description: "All permissions"
+    default: op
+    children:
+      purestcraft.staffchat: true
+      purestcraft.setspawn: true
+      purestcraft.unmute: true
+      purestcraft.tempmute: true
+      purestcraft.mute: true

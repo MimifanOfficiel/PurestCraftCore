@@ -1,0 +1,20 @@
+spawn:
+  World: "world"
+  X: 0
+  Y: 70
+  Z: 0
+  Yaw: -180
+  Pitch: 0
+
+chest-signs:
+  - "OAK_WALL_SIGN"
+  - "SPRUCE_WALL_SIGN"
+  - "MANGROVE_WALL_SIGN"
+  - "DARK_OAK_WALL_SIGN"
+  - "ACACIA_WALL_SIGN"
+  - "BAMBOO_WALL_SIGN"
+  - "CHERRY_WALL_SIGN"
+  - "BIRCH_WALL_SIGN"
+  - "CRIMSON_WALL_SIGN"
+  - "JUNGLE_WALL_SIGN"
+  - "WARPED_WALL_SIGN"
